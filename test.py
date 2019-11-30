@@ -28,9 +28,9 @@ segments_tensors = torch.tensor([segments_ids])
 
 model = BertModel.from_pretrained('bert-base-uncased')
 
-# ## Now let's save our model and tokenizer to a directory
-# model.save_pretrained('./my_saved_model_directory/')
-# tokenizer.save_pretrained('./my_saved_model_directory/')
+# Now let's save our model and tokenizer to a directory
+model.save_pretrained('./my_model/')
+tokenizer.save_pretrained('./my_model/')
 #
 # ### Reload the model and the tokenizer
 # model = BertForSequenceClassification.from_pretrained('./my_saved_model_directory/')
