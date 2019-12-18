@@ -137,6 +137,7 @@ examples/runs
 
 # data
 /data
+/output
 serialization_dir
 
 # emacs
