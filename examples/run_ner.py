@@ -511,8 +511,8 @@ def main():
                 writer.write("{} = {}\n".format(key, str(result[key])))
         # Save predictions
         output_test_predictions_file = os.path.join(args.output_dir, "test_predictions.txt")
-        with open(output_test_predictions_file, "w") as writer:
-            with open(os.path.join(args.data_dir, "test.txt"), "r") as f:
+        with open(output_test_predictions_file, "w", encoding="utf-8") as writer:
+            with open(os.path.join(args.data_dir, "test.txt"), "r", encoding="utf-8") as f:
                 example_id = 0
                 for line in f:
                     if line.startswith("-DOCSTART-") or line == "" or line == "\n":

@@ -1,2 +1,2 @@
-python ./examples/run_ner.py --data_dir ./data/ --model_type bert --model_name_or_path ./my_model/chinese_wwm/ --output_dir ./output/ --max_seq_length 128 --num_train_epochs 3 --per_gpu_train_batch_size 32 --save_steps 750 --seed 1 --do_train --do_eval --do_predict
+python ./examples/run_ner.py --data_dir ./data/ --model_type bert --labels ./data/labels.txt --model_name_or_path ./my_model/bert-base-chinese/ --output_dir ./output/ --max_seq_length 512 --num_train_epochs 10 --per_gpu_train_batch_size 4 --save_steps 750 --seed 1   --do_predict
 @pause

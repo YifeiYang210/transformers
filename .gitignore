@@ -2,6 +2,9 @@
 
 # customized
 my_model/
+test_results1.txt
+test_results2.txt
+test_results3.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
